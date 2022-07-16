@@ -16,17 +16,16 @@ REM DL and autoinstall tightvnc
 
 curl.exe --output tightvnc.msi --url https://www.tightvnc.com/download/2.8.63/tightvnc-2.8.63-gpl-setup-64bit.msi
 msiexec.exe /i tightvnc.msi /quiet /norestart SET_USEVNCAUTHENTICATION=1 VALUE_OF_USEVNCAUTHENTICATION=1 SET_PASSWORD=1 VALUE_OF_PASSWORD=mlkpoi1$
-del "tighvnc.msi"
+
 
 REM DL and autoinstall node for noVNC
 
 curl.exe --output node.msi --url https://nodejs.org/dist/v16.16.0/node-v16.16.0-x64.msi
 msiexec.exe /i node.msi /qn
-del "node.msi"
+
 
 REM Create websockify file
 
-touch websockify.js
 echo var websockify = require('node-websockify'); > websockify.js
 echo websockify({ >> websockify.js
 echo source: '0.0.0.0:8000', >> websockify.js
