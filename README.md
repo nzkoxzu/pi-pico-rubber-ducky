@@ -64,7 +64,7 @@ Set WShell = CreateObject("WScript.Shell")
 WShell.Run "not_malicious_file.exe", 0
 Set WShell = Nothing
 ```
-This simple VBS file will launch the `not_malicious_file.exe` and the `, 0` statement enable the silent launch.
+This VBS file will launch `not_malicious_file.exe` and the `, 0` statement enable silent run.
 
 
 # Changing Keyboard layouts
