@@ -16,7 +16,7 @@ Aim is to run a R.A.T payload btw of a Raspberry Pi-Pico (rp2040) running ducky 
 3. Jsut drag and drop the `.uf2` file into the root directory of the Pi Pico. The device will now reboot as `CIRCUITPY`.  
 4. Download and copy the repo content to the Pico :
 ```sh
-   git clone https://github.com/nzkoxzu/pi-pico-rubber-ducky.git
+git clone https://github.com/nzkoxzu/pi-pico-rubber-ducky.git
 ```
 ```sh
 cp -r pi-pico-rubber-ducky/* /media/username/CIRCUITPY/
@@ -27,6 +27,23 @@ cp -r pi-pico-rubber-ducky/* /media/username/CIRCUITPY/
 
 # Setup mode
 
+To edit the payload, enter setup mode by connecting the pin 1 (`GP0`) to pin 3 (`GND`), this will stop the pico-ducky from injecting the payload in your own machine. The easiest way to so is by using a jumper wire between those pins as seen bellow.
+
+![setup-mode](https://raw.githubusercontent.com/nzkoxzu/pi-pico-rubber-ducky/main/images/setup-mode.png)
+
+# USB enable/disable mode
+
+If you need the pico-ducky to not show up as a USB mass storage device for stealth, follow these instructions.
+1. Enter setup mode.
+2. Copy `boot.py` to the root of the pico-ducky.
+Copy your `payload.dd` script to the pico-ducky.
+Disconnect the pico from your host PC. Connect a jumper wire between pin 18 (`GND`) and pin 20 (`GPIO15`). This will prevent the pico-ducky from showing up as a USB drive when plugged into the target computer.
+Remove the jumper and reconnect to your PC to reprogram. The default mode is USB mass storage enabled.
+
+
+![usb-boot-mode](https://raw.githubusercontent.com/nzkoxzu/pi-pico-rubber-ducky/main/images/usb-boot-mode.png)
+
+# Changing Keyboard layouts
 
 
 
