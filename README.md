@@ -135,11 +135,11 @@ keycode_win_de.mpy
 ```
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/nzkoxzu/pi-pico-rubber-ducky.svg?style=for-the-badge&logo=appveyor&color=success
+[contributors-shield]: https://img.shields.io/github/contributors/nzkoxzu/pi-pico-rubber-ducky.svg?style=plastic&logo=appveyor&logo=appveyor&color=success
 [contributors-url]: https://github.com/nzkoxzu/pi-pico-rubber-ducky/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/nzkoxzu/pi-pico-rubber-ducky.svg?style=for-the-badge&logo=appveyor&color=yellow
+[forks-shield]: https://img.shields.io/github/forks/nzkoxzu/pi-pico-rubber-ducky.svg?style=plastic&logo=appveyor&logo=appveyor&color=yellow
 [forks-url]: https://github.com/nzkoxzu/pi-pico-rubber-ducky/network/members
-[license-shield]: https://img.shields.io/github/license/nzkoxzu/pi-pico-rubber-ducky.svg?style=for-the-badge&logo=appveyor&color=orange
+[license-shield]: https://img.shields.io/github/license/nzkoxzu/pi-pico-rubber-ducky.svg?style=plastic&logo=appveyor&logo=appveyor&color=orange
 [license-url]: https://github.com/nzkoxzu/pi-pico-rubber-ducky/blob/master/LICENSE.txt
-[issues-shield]: https://img.shields.io/github/issues/nzkoxzu/pi-pico-rubber-ducky.svg?style=for-the-badge&logo=appveyor&color=red
+[issues-shield]: https://img.shields.io/github/issues/nzkoxzu/pi-pico-rubber-ducky.svg?style=plastic&logo=appveyor&logo=appveyor&color=red
 [issues-url]: https://github.com/nzkoxzu/pi-pico-rubber-ducky/issues
