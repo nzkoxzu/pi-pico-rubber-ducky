@@ -1,9 +1,7 @@
-<hr>
-
-
 <h3 align="center">
+  
 <p align="center">
-<img src="https://cdn-media-1.freecodecamp.org/images/1*ylvkldd2jkFaSSpn8MdVTQ.png" width="" height="200" />
+  <img src="https://cdn-media-1.freecodecamp.org/images/1*ylvkldd2jkFaSSpn8MdVTQ.png" width="" height="200" />
 </p>
 
   Raspberry Pi-Pico as Rubber Ducky<br><br>
@@ -14,10 +12,6 @@
             <img src="https://img.shields.io/github/forks/nzkoxzu/pi-pico-rubber-ducky.svg?style=plastic&logo=appveyor&logo=appveyor&color=red" alt="pico" height=24>
     <img src="https://img.shields.io/github/issues/nzkoxzu/pi-pico-rubber-ducky.svg?style=plastic&logo=appveyor&logo=appveyor&color=orange" alt="pico" height=24>
   </a>
-  
-  
-  
-  
 </h3>
 
 # pi-pico-rubber-ducky
