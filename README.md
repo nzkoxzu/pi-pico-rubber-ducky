@@ -1,10 +1,12 @@
+
+
+# pi-pico-rubber-ducky
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![MIT License][license-shield]][license-url]
 [![Issues][issues-shield]][issues-url]
-
-
-# pi-pico-rubber-ducky
 
 
 
