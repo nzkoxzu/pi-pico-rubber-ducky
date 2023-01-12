@@ -2,8 +2,11 @@
 
 
 <h3 align="center">
+<p align="center">
+<img src="https://cdn-media-1.freecodecamp.org/images/1*ylvkldd2jkFaSSpn8MdVTQ.png" width="" height="200" />
+</p>
 
-  Raspberry Pi-Pico as Rubber Ducky.<br><br>
+  Raspberry Pi-Pico as Rubber Ducky<br><br>
   <a href="#">
       <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="pico" height=24 title="pico">
     <img src="https://awesome.re/badge.svg" alt="Awesome" height=24>
