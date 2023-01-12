@@ -1,14 +1,23 @@
+<hr>
 
+
+<h3 align="center">
+
+  Raspberry Pi-Pico as Rubber Ducky.<br><br>
+  <a href="#">
+      <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="pico" height=24 title="pico">
+    <img src="https://awesome.re/badge.svg" alt="Awesome" height=24>
+    <img src="https://img.shields.io/github/contributors/nzkoxzu/pi-pico-rubber-ducky.svg?style=plastic&logo=appveyor&logo=appveyor&color=success" alt="pico" height=24>
+            <img src="https://img.shields.io/github/forks/nzkoxzu/pi-pico-rubber-ducky.svg?style=plastic&logo=appveyor&logo=appveyor&color=red" alt="pico" height=24>
+    <img src="https://img.shields.io/github/issues/nzkoxzu/pi-pico-rubber-ducky.svg?style=plastic&logo=appveyor&logo=appveyor&color=orange" alt="pico" height=24>
+  </a>
+  
+  
+  
+  
+</h3>
 
 # pi-pico-rubber-ducky
-
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![MIT License][license-shield]][license-url]
-[![Issues][issues-shield]][issues-url]
-
-
 
 Aim is to run a R.A.T payload btw of a Raspberry Pi-Pico (rp2040) running ducky scripts. Part of : https://github.com/Denis-REMACLE/K-ptain.Ratz
 
@@ -139,11 +148,4 @@ keycode_win_de.mpy
 ```
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/nzkoxzu/pi-pico-rubber-ducky.svg?style=plastic&logo=appveyor&logo=appveyor&color=success
-[contributors-url]: https://github.com/nzkoxzu/pi-pico-rubber-ducky/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/nzkoxzu/pi-pico-rubber-ducky.svg?style=plastic&logo=appveyor&logo=appveyor&color=yellow
-[forks-url]: https://github.com/nzkoxzu/pi-pico-rubber-ducky/network/members
-[license-shield]: https://img.shields.io/github/license/nzkoxzu/pi-pico-rubber-ducky.svg?style=plastic&logo=appveyor&logo=appveyor&color=orange
-[license-url]: https://github.com/nzkoxzu/pi-pico-rubber-ducky/blob/master/LICENSE.txt
-[issues-shield]: https://img.shields.io/github/issues/nzkoxzu/pi-pico-rubber-ducky.svg?style=plastic&logo=appveyor&logo=appveyor&color=red
-[issues-url]: https://github.com/nzkoxzu/pi-pico-rubber-ducky/issues
+
